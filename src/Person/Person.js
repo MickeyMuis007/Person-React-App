@@ -5,7 +5,7 @@ import Tag from './Tag/Tag';
 const person = (props) => {
   const friendList = props.person.friends;
   const friends = (
-      <ul className="col-md-2">
+      <ul className="col-md-4">
         {friendList.map((friend,) => {
           return <Friend 
             friend={friend}
@@ -16,7 +16,7 @@ const person = (props) => {
     );
     const tagList = props.person.tags;
     const tags = (
-        <ul className="col-md-2">
+        <ul className="col-md-4">
           {tagList.map((tag) => {
             return <Tag 
               tag={tag}
