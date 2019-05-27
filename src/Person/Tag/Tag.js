@@ -4,8 +4,8 @@ const tag = (props) => {
   return (
     <li className="row">
       <span className="col-md-6">{props.tag}</span> 
-      <span className="col-md-3"><button className="btn btn-primary">Edit</button></span>
-      <span className="col-md-3"><button className="btn btn-danger">Delete</button></span>
+      <button className="col-md-3 btn btn-primary">Edit</button>
+      <button className="col-md-3 btn btn-danger">Delete</button>
     </li>
   )
 }
