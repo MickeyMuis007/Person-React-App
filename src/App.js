@@ -51,8 +51,9 @@ class App extends Component {
         <header className="App-header">
           <h1>Person Demo</h1>
         </header>
-        {person}
-
+        <div>
+          {person}
+        </div>
       </div>
     );
   }

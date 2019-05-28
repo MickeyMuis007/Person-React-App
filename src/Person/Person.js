@@ -1,11 +1,12 @@
 import React from 'react';
 import Friend from './Friend/Friend';
 import Tag from './Tag/Tag';
+import './Person.css';
 
 const person = (props) => {
   const friendList = props.person.friends;
   const friends = (
-      <ul className="col-md-4">
+      <ul className="">
         {friendList.map((friend,) => {
           return <Friend 
             friend={friend}
@@ -16,22 +17,24 @@ const person = (props) => {
     );
     const tagList = props.person.tags;
     const tags = (
-        <ul className="col-md-4">
-          {tagList.map((tag) => {
+        <ul className="">
+          {tagList.map((tag, index) => {
             return <Tag 
               tag={tag}
-              key={`${new Date().getTime()}`}
+              key={`${new Date().getTime() + index}`}
             />
           })}
         </ul>
       );
   
   return (
-    <div>
-      <div>Name: {props.person.name}</div>
+    <div className="container person-container">
+      <div>
+       Name:{props.person.name}
+      </div>
       <div>Gender: {props.person.gender}</div>
       <div>Friends:</div>
-      <div>
+      <div className="">
         {friends}
       </div>
       <button className="btn btn-success">Add Friend</button>

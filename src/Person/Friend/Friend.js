@@ -2,10 +2,10 @@ import React from 'react';
 
 const friend = (props) => {
   return (
-    <li className="row">
+    <li className="row mb-2">
       <span className="col-md-3">{props.friend.name}</span> 
-      <button className="col-md-3 btn btn-primary">Edit</button>
-      <button className="col-md-3 btn btn-info">View</button>
+      <button className="mx-2 btn btn-primary">Edit</button>
+      <button className="mx-2 btn btn-info">View</button>
     </li>
   )
 }
