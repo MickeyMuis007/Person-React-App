@@ -42,7 +42,7 @@ const person = (props) => {
       <div className="container list-container">
         {friends}
         <div className="d-flex justify-content-end">
-          <button className="b-float"><FontAwesomeIcon icon="plus" /></button>
+          <button className="b-float" data-toggle="tooltip" data-placement="top" title="Add Friend"><FontAwesomeIcon icon="plus" /></button>
         </div>
       </div>
 
@@ -50,7 +50,7 @@ const person = (props) => {
       <div className="container list-container">
         {tags}
         <div className="d-flex justify-content-end">
-          <button className="b-float"><FontAwesomeIcon icon="plus" /></button>
+          <button className="b-float" data-toggle="tooltip" data-placement="top" title="Add Tag"><FontAwesomeIcon icon="plus" /></button>
         </div>
       </div>
 

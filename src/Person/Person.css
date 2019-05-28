@@ -1,5 +1,5 @@
 .person-container {
-  box-shadow: 0px 0px 18px #888888;;
+  box-shadow: 0px 0px 18px #e71b1b;;
   border: 2px solid red;
   border-radius: 20px;
   padding: 10px;
@@ -20,6 +20,6 @@
 	background-color:#0C9;
 	color:#FFF;
 	border-radius:50px;
-  box-shadow: 0px 0px 14px #ffffff;;
+  box-shadow: 0px 0px 7px #ffffff;;
   margin: 0px 5px;
 }

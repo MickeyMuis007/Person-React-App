@@ -59,7 +59,7 @@ class App extends Component {
         <div>
           {person}
         </div>
-        <button className="btn btn-link">
+        <button className="btn btn-link" data-toggle="tooltip" data-placement="top" title="Add Person">
           <FontAwesomeIcon class="float" icon="plus" />
         </button>
       </div>
