@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import Person from './Person/Person';
+import Person from './Person/Person'; 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faPlus);
 
 class App extends Component {
   state = {
@@ -11,7 +16,7 @@ class App extends Component {
           [{ id: 'sdf-sdf-ljdi-adkjf-1', name: 'Mike' },
           { id: 'sdf-sdf-ljdi-adkjf-2', name: 'John' },
           { id: 'sdf-sdf-ljdi-adkjf-3', name: 'Adam' }],
-          tags: ['jids', 'jkdd', 'dkie', 'jids']
+        tags: ['jids', 'jkdd', 'dkie', 'jids']
       },
       {
         id: 'kjds-adjie-jfds-dsa2', gender: 'male', name: 'Manu',
@@ -54,6 +59,9 @@ class App extends Component {
         <div>
           {person}
         </div>
+        <button className="btn btn-link">
+          <FontAwesomeIcon class="float" icon="plus" />
+        </button>
       </div>
     );
   }
